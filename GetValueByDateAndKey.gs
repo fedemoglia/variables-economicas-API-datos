@@ -9,6 +9,7 @@ function valueByDateAndKey(fecha, key) {
     }
   };
   var data = fetchValue(key, today);
+  //Iterates previous days in case that the value for the specified date is not valid
   while (data.data[0] == undefined) {
     today.setDate(today.getDate() -1);
     data = fetchValue(key, today);
