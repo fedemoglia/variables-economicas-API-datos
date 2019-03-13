@@ -16,10 +16,11 @@ Por este motivo agrego el script [cotización dólar](../blob/master/CotizacionD
 ### Funciones disponibles
 
 * Inflación -> inflacion
-* Dólar -> valueDolar y cotizacionDolar
+* Dólar -> valueDolar y cotizacionDolar (No consulta la API oficial de la Secretaría de Modernización)
 * UVA -> valueUVA
 
 valueDolar y valueUVA solo reciben un parámetro que es la fecha de la que se quiere consultar la cotización.
+
 inflación recibe 2 parámetros, la fecha de inicio y de fin del período en el que se quiere calcular la inflación acumulada.
 
 
