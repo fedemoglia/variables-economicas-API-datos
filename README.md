@@ -4,9 +4,11 @@ Los datos son tomados de la API pública provista por el Secretaria de Moderniza
 
 ### Funciones disponibles
 
-* Inflación -> inflacion
-* Dólar -> valueDolar y cotizacionDolar (No consulta la API oficial de la Secretaría de Modernización)
-* UVA -> valueUVA
+* Inflación -> *inflacion*
+* Dólar
+  * *valueDolar*
+  * *cotizacionDolar* (No consulta la API oficial de la Secretaría de Modernización)
+* UVA -> *valueUVA*
 
 valueDolar y valueUVA solo reciben un parámetro que es la fecha de la que se quiere consultar la cotización.
 
