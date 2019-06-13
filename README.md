@@ -6,8 +6,9 @@ Los datos son tomados de la API pública provista por el Secretaria de Moderniza
 
 * Inflación -> *inflacion*: Recibe 2 parámetros, la fecha de inicio y de fin del período en el que se quiere calcular la inflación acumulada.
 * Dólar -> Ambas funciones reciben un parámetro que es la fecha de la que se quiere consultar la cotización.
-  * *valueDolar*: 
+  * *valueDolar*
   * *cotizacionDolar* (No consulta la API oficial de la Secretaría de Modernización)
+  * *dolarBCRA* Consulta la API del BCRA https://api.estadisticasbcra.com/usd_of_minorista
 * UVA -> *valueUVA*: Recibe un parámetro que es la fecha de la que se quiere consultar la cotización.
 
 ### Ejemplo de uso de la función para obtener la cotización del dólar. ([Dolar.gs](../blob/master/Dolar.gs))
@@ -20,4 +21,5 @@ Para usar la función del valor de UVA o dólar es necesario importar el script 
 Actualmente la última cotización que devuelve la API es del 10-05-2019. https://apis.datos.gob.ar/series/api/series/?ids=168.1_T_CAMBIOR_D_0_0_26&start_date=2019-01-31&end_date=2019-06-12&format=json
 Por este motivo agrego el script [cotización dólar](../blob/master/CotizacionDolar.gs).
 
+El script [dolar BCRA](../blob/master/DolarApiBCRA.gs) tiene la cotización actualizada hasta el día de la fecha.
 
