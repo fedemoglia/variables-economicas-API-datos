@@ -1,6 +1,6 @@
 # Variables económicas por fecha o período
 
-Los datos son tomados de la API pública provista por el Secretaria de Modernización de la Nación en http://datos.gob.ar.
+Los datos son tomados de la API pública provista por el Secretaria de Modernización de la Nación en http://datos.gob.ar y de la API del BCRA https://estadisticasbcra.com/api/documentacion. Es necesario registrarse y obtener un token para poder hacer requests en esta última.
 
 ### Funciones disponibles
 
