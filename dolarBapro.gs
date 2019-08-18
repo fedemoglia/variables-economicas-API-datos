@@ -1,6 +1,7 @@
 /**
 * Obtiene la cotización del dólar minorista de la API del Banco Provincia para la fecha actual
 * @customfunction
+* @return la última cotización del dólar para la venta
 **/
 
 function dolarBapro() {
