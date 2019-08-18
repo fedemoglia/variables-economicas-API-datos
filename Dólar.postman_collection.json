@@ -1,0 +1,147 @@
+{
+	"info": {
+		"_postman_id": "ed6e6272-9eb6-4ddf-ac4d-d574acc0ceb9",
+		"name": "Dólar",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Banco Provincia",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://www.bancoprovincia.com.ar/Principal/Dolar",
+					"protocol": "https",
+					"host": [
+						"www",
+						"bancoprovincia",
+						"com",
+						"ar"
+					],
+					"path": [
+						"Principal",
+						"Dolar"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "BCRA",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "yourBearerTokenHere",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://api.estadisticasbcra.com/usd_of_minorista",
+					"protocol": "https",
+					"host": [
+						"api",
+						"estadisticasbcra",
+						"com"
+					],
+					"path": [
+						"usd_of_minorista"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Balanz",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://www.balanz.com/api/cotizacionmoneda/2",
+					"protocol": "https",
+					"host": [
+						"www",
+						"balanz",
+						"com"
+					],
+					"path": [
+						"api",
+						"cotizacionmoneda",
+						"2"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "API Datos",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://apis.datos.gob.ar/series/api/series/?ids=168.1_T_CAMBIOR_D_0_0_26&start_date=2019-07-31&end_date=2019-09-12&format=json",
+					"protocol": "https",
+					"host": [
+						"apis",
+						"datos",
+						"gob",
+						"ar"
+					],
+					"path": [
+						"series",
+						"api",
+						"series",
+						""
+					],
+					"query": [
+						{
+							"key": "ids",
+							"value": "168.1_T_CAMBIOR_D_0_0_26"
+						},
+						{
+							"key": "start_date",
+							"value": "2019-07-31"
+						},
+						{
+							"key": "end_date",
+							"value": "2019-09-12"
+						},
+						{
+							"key": "format",
+							"value": "json"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Geeklab",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://ws.geeklab.com.ar/dolar/get-dolar-json.php",
+					"protocol": "http",
+					"host": [
+						"ws",
+						"geeklab",
+						"com",
+						"ar"
+					],
+					"path": [
+						"dolar",
+						"get-dolar-json.php"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
