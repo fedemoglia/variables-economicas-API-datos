@@ -8,8 +8,8 @@ Los datos son tomados de la API pública provista por el Secretaria de Moderniza
 * Dólar -> Ambas funciones reciben un parámetro que es la fecha de la que se quiere consultar la cotización.
   * *valueDolar*
   * *cotizacionDolar* (No consulta la API oficial de la Secretaría de Modernización)
-  * *dolarBCRA* Consulta la API del BCRA https://api.estadisticasbcra.com/usd_of_minorista
-  * *dolarBCRAByDate* Devuelve la cotización del dólar para una fecha determinada consultando la API del BCRA https://api.estadisticasbcra.com/usd_of_minorista
+  * *dolarBCRA* y *dolarBCRAByDate* Devuelve la cotización actual del dólar o para una fecha determinada consultando la API del BCRA  https://api.estadisticasbcra.com/usd_of_minorista
+  * *dolarBapro* Devuelve la cotización actual del dólar de la API del Banco Provincia https://www.bancoprovincia.com.ar/Principal/Dolar
 * UVA -> *valueUVA*: Recibe un parámetro que es la fecha de la que se quiere consultar la cotización.
 
 ### Ejemplo de uso de la función para obtener la cotización del dólar. ([Dolar.gs](../master/Dolar.gs))
