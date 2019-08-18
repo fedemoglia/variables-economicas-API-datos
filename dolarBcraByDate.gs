@@ -20,7 +20,7 @@ function httpGet(url,key, date) {
     const values = JSON.parse(response.getContentText());
     const day = new Date(date);
     var i = values.length - 1;
-    const fechaString = Utilities.formatDate(dia, 'America/Buenos_Aires', 'yyyy-MM-dd');
+    const fechaString = Utilities.formatDate(day, 'America/Buenos_Aires', 'yyyy-MM-dd');
     while(values[i].d != fechaString && new Date(values[i].d) > day) {
       i--;
     }
