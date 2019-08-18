@@ -1,0 +1,27 @@
+/**
+* Obtiene la cotización del dólar minorista de la API del BCRA para la fecha actual
+* @customfunction
+**/
+
+function dolarBcraByDate(date) { 
+    const key = 'eyJhbGciOiJIUzUxMiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE1OTE5MjE2NjcsInR5cGUiOiJleHRlcm5hbCIsInVzZXIiOiJmZWRlcmljb21vZ2xpYUBnbWFpbC5jb20ifQ.T7lxjRLj4R-mcDBvShJJJLWyLkGNOTcwdI2gWVLYAJUPcd-xUA0qHnBQzFAh0RsJbzwyPdMTLwT5103MfyULwQ'; 
+    const url = 'https://api.estadisticasbcra.com/usd_of_minorista';
+    return httpGet(url,key, date); 
+}
+
+
+function httpGet(url,key, date) {
+    const headers = {'Authorization': 'BEARER ' + key};
+    var options = {
+      'headers': headers
+    }
+    const response = UrlFetchApp.fetch(url, options);
+    const values = JSON.parse(response.getContentText());
+    const day = new Date(date);
+    var i = values.length - 1;
+    const fechaString = Utilities.formatDate(dia, 'America/Buenos_Aires', 'yyyy-MM-dd');
+    while(values[i].d != fechaString && new Date(values[i].d) > day) {
+      i--;
+    }
+    return values[i].v
+}
