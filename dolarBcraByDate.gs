@@ -1,10 +1,11 @@
 /**
-* Obtiene la cotización del dólar minorista de la API del BCRA para la fecha actual
+* Obtiene la cotización del dólar minorista de la API del BCRA para una fecha determinada
 * @customfunction
 **/
 
 function dolarBcraByDate(date) { 
-    const key = 'eyJhbGciOiJIUzUxMiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE1OTE5MjE2NjcsInR5cGUiOiJleHRlcm5hbCIsInVzZXIiOiJmZWRlcmljb21vZ2xpYUBnbWFpbC5jb20ifQ.T7lxjRLj4R-mcDBvShJJJLWyLkGNOTcwdI2gWVLYAJUPcd-xUA0qHnBQzFAh0RsJbzwyPdMTLwT5103MfyULwQ'; 
+    //Registrarse aquí para obtener la key https://estadisticasbcra.com/api/registracion
+    const key = 'yourKey';
     const url = 'https://api.estadisticasbcra.com/usd_of_minorista';
     return httpGet(url,key, date); 
 }
