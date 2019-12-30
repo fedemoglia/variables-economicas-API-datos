@@ -19,7 +19,7 @@ En una celda escriben la fórmula *=valueDolar(A7)* donde A7 es una celda con un
 Para usar la función del valor de UVA o dólar es necesario importar el script [GetValueByDateAndKey.gs](../master/GetValueByDateAndKey.gs) al proyecto de Google Script.
 
 > **Cotización del dólar**
-Actualmente la última cotización que devuelve la API es del 08-08-2019. https://apis.datos.gob.ar/series/api/series/?ids=168.1_T_CAMBIOR_D_0_0_26&start_date=2019-07-31&end_date=2019-09-12&format=json
+Actualmente la última cotización que devuelve la API es del 07-11-2019. https://apis.datos.gob.ar/series/api/series/?ids=168.1_T_CAMBIOR_D_0_0_26&start_date=2019-07-31&end_date=2019-12-29&format=json
 Por este motivo agrego el script [cotización dólar](../master/CotizacionDolar.gs).
 
 El script [dolar BCRA](../master/DolarApiBCRA.gs) tiene la cotización actualizada hasta el día de la fecha.
