@@ -8,6 +8,6 @@
 * @customfunction
 **/
 function valueUVA(fecha) {
-  var uvaKey = "94.2_UVAD_D_0_0_10";
+  const uvaKey = "94.2_UVAD_D_0_0_10";
   return valueByDateAndKey(fecha, uvaKey);
 }
