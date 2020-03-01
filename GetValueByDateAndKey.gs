@@ -15,15 +15,12 @@ function valueByDateAndKey(fecha, key) {
     data = fetchValue(key, today);
   }
   var fechaValor = data.data[0];
-  var value = fechaValor[1];
-  Logger.log(value);
-  return value;
+  Logger.log(fechaValor[1]);
+  return fechaValor[1];
 }
 
 function fetchValue(key, today) {
-  var url = "https://apis.datos.gob.ar/series/api/series/?limit=1&start_date=";
-  url = url.concat(today.getYear(), "-", today.getMonth() + 1, "-",
-                   today.getDate(), "&ids=", key, "&format=json&metadata=none");
-  var response = UrlFetchApp.fetch(url);
+  const url = `https://apis.datos.gob.ar/series/api/series/?limit=1&start_date=${today.getFullYear()}-${today.getMonth()+1}-${today.getDate()}&ids=${key}&format=json&metadata=none`;
+  const response = UrlFetchApp.fetch(url);
   return JSON.parse(response.getContentText());
 }
